@@ -1,0 +1,87 @@
+
+
+
+.navbar{
+    background-color: blueviolet;
+    grid-area: uno;
+    
+    
+}
+
+.secciónprincipal{
+    background-color: aqua;
+    grid-area: dos;
+}
+
+footer{
+    background-color: brown;
+    grid-area: tres;
+}
+
+.boxprincipal{
+    
+ 
+    
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    'uno dos'
+    'uno tres';
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    
+}
+
+h3:hover{
+    background-color: rgb(237, 127, 42);
+    color: white;
+    border: 5px black;
+    border-radius: 5px;
+    
+}
+
+.productos{
+    display: flex;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+    gap: 30px;
+    
+}
+
+.productos img{
+    width: 285px;
+    height: 200px;
+}
+
+.contacto{
+    display: flex;
+    align-items: center;
+    
+}
+
+.contacto:hover{
+    background-color: rgb(237, 127, 42);
+    color: white;
+}
+
+
+
+
+@media (max-width:576px) {
+    .boxprincipal{
+        display: grid;
+        grid-template-columns: auto;
+        grid-area: 
+        'uno'
+        'dos'
+        'tres';
+    }
+
+}
+
+
